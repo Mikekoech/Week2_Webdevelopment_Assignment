@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced HTML Form</title>
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML Elements & Form</h1>
+    </header>
+
+    <main>
+        <!-- Definition List -->
+        <section>
+            <h2>Definition List</h2>
+            <dl>
+                <dt>USA</dt>
+                <dd>United States of America</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+            </dl>
+        </section>
+
+        <!-- Nested Lists with Media -->
+        <section>
+            <h2>Nested Lists & Media</h2>
+            <ol>
+                <li>Cars
+                    <ol type="i">
+                        <li>Honda
+                            <img src="https://images.pexels.com/photos/32164481/pexels-photo-32164481.jpeg" 
+                                 alt="Honda Civic" width="400" height="250">
+                        </li>
+                        <li>BMW
+                            <video width="400" height="250" controls>
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                Your browser does not support video playback.
+                            </video>
+                        </li>
+                        <li>Toyota
+                            <ol type="a">
+                                <li>Corolla</li>
+                                <li>Camry</li>
+                                <li>Prius</li>
+                            </ol>
+                            <audio controls>
+                                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                                Your browser does not support audio playback.
+                            </audio>
+                        </li>
+                    </ol>
+                </li>
+                <li>Motorbikes
+                    <ol type="i">
+                        <li>Yamaha</li>
+                        <li>Kawasaki</li>
+                        <li>Ducati
+                            <ol>
+                                <li>Monster</li>
+                                <li>Panigale</li>
+                                <li>Multistrada</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Table -->
+        <section>
+            <h2>Car Models Table</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Car</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Toyota</td>
+                        <td>Corolla</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Honda</td>
+                        <td>Civic</td>
+                        <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>Mustang</td>
+                        <td>2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- HTML5 Form -->
+        <section>
+            <h2>User Registration Form</h2>
+            <form action="/submit" method="post" autocomplete="on">
+                
+                <!-- Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                <br><br>
+
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+                <br><br>
+
+                <!-- Phone -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254700000000" required pattern="^\+?\d{10,15}$">
+                <br><br>
+
+                <!-- Readonly Field -->
+                <label for="ref">Referral Code:</label>
+                <input type="text" id="ref" name="ref" value="WELCOME2025" readonly>
+                <br><br>
+
+                <!-- Gender -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </fieldset>
+                <br>
+
+                <!-- Country -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select Country--</option>
+                    <option value="usa">USA</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select>
+                <br><br>
+
+                <!-- Comments -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your feedback here"></textarea>
+                <br><br>
+
+                <!-- Submit -->
+                <input type="submit" value="Submit Form">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Week 2 HTML Project</p>
+    </footer>
+</body>
+</html>
